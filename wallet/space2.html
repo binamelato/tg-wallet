@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+	<link type="image/x-icon" rel="icon" href="./assets/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="all"  href="./sources/style.css" />		
+</head>
+<body>
+	<div id="viewport">		
+		<div id="appSection" class="" style="background-color:#222223;">			
+			<div id="sectorHead" class="-section">	
+				<div id="headerBar">
+					<div class="hSetts">						
+						<div style="color:#fff;">TON Wallet</div>						
+					</div>
+				</div>
+			</div>
+			<div id="sectorMidd" class="sectorMdop" class="-section">
+				<div id="midHead" class="midHeadDop">
+					<div id="tnLabel" style="top:220px;">
+						<img src="./assets/space_n1.png" style="width:200px;height:200px;">
+					</div>					
+				</div>
+				<div id="midBody">
+					<div style="height:300px;">
+						<div class="markDesc">
+							<div style="font-size:1.8rem;margin: 0 0 20px;">Your Gateway to TON</div>
+							<div style="font-size:1.1rem;font-weight:600;text-align:center;line-height:24px;">Access decentralized applications with your TON Space</div>
+							<div style="display:flex;margin:50px 0 0px;">
+								<div class="markTS markDop"></div>
+								<div class="markTS markDop"></div>
+								<div class="markTSAc markDop">
+									<div class="markTS"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="panPact snb panDop">						
+							<div class="activDesc">
+								<div class="nameActiv" style="text-align:center;">Start Exploring TON</div>
+							</div>
+						</div>
+						<div class="panDop txtDop">						
+							<div class="activDesc">
+								<div class="nameActiv" style="text-align:center;">Add Existing Wallet</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div id="sectorFoot" class="-section">
+				<div id="butPodval" class="butPodval">					
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="./sources/wallet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/eruda"></script>
+<script>/*eruda.init();*/</script>
+<script>
+	var tnLabel = document.querySelector("#tnLabel");
+	var misHead = document.querySelector("#midHead");
+	var rect = misHead.getBoundingClientRect();
+	console.log("height: " + rect.height);	
+	temHeight = rect.height + 135;
+	tnLabel.setAttribute("style","top:"+temHeight+"px");
+</script>
+</body>
+</html>
